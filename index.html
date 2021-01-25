@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autenticacion</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script> src="main.js"</script>
+</head>
+<body>
+  <div id="login_div" class="main-div">
+    <h3>Iniciar sesión</h3>
+    <input type="email" placeholder="Email"/>
+    <input type="password" placeholder="Password.."/>
+
+    <button onclick="login()">Iniciar Sesión</button>
+  </div>
+    <div id="user_div" class="loggedin-div">
+      <h3>Bienvenido</h3>
+      <p>Bienvenido al ejemplo de autenticacion</p>
+      <button>Cerrar sesión</button>
+    </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCMDTtrqLR09kIOEwR1LD9aZ5jD6_r4Bks",
+    authDomain: "fbksvh-aea0d.firebaseapp.com",
+    projectId: "fbksvh-aea0d",
+    storageBucket: "fbksvh-aea0d.appspot.com",
+    messagingSenderId: "295811823952",
+    appId: "1:295811823952:web:977c230333fc90cec29455"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+</script>
+</body>
+<footer>Copyright &copy; 2021 Karla Shamady Vasquez Hernandez.</footer>
+</html>
